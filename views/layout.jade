@@ -1,7 +1,16 @@
 doctype 5
 html
   head
-    title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
+    title Todo Stuff
+    link(rel='stylesheet', href="/stylesheets/bootstrap.css")
+    script(src='http://code.jquery.com/jquery-1.9.1.min.js')
+ ul.breadcrumb
+    li
+        a(href='#') Home
+        span.divider /
+      li
+        a(href='#') Library
+        span.divider /
+      li.active Data
   body
     block content

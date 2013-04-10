@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  form(action="/todoLists", method="post")
+    input(type='text', placeholder='name', name='name')
+    button.btn(type='submit') Submit
+  - each todoList in todoLists
+    p= todoList.name 
+    a(href="/todoListItems/"+todoList._id, class="btn btn-danger") Delete
+      

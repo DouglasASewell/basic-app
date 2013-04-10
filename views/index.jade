@@ -1,5 +1,27 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  h1= "All of the things"
+  .row
+    .span4.offset1
+      form(action="/login", method="POST")
+        fieldset
+          
+          
+          - if(locals.currentUser)
+            p Welcome back
+            p Show your to do lists
+            a(href="/TodoLists", class="btn") To do lists
+            | | 
+            a(href="/logout", class="btn btn-danger") Logout
+          - else
+            legend Login
+            = message
+            input(type='text', placeholder='Username', value=email, name='email')
+            input(type='password', placeholder='Password', name='password')
+            
+            button.btn(type='submit') Login
+            
+    .span8 
+       img.img-circle(src='http://i258.photobucket.com/albums/hh269/DSewell692/149758_4114119056682_1671672681_n1_zpsec1357bb.jpg',width="100")
+

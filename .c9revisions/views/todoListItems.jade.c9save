@@ -1,0 +1,7 @@
+{"ts":1363214429354,"silentsave":true,"restoring":false,"patch":[[]],"length":0}
+{"contributors":[],"silentsave":false,"ts":1363214984427,"patch":[[{"diffs":[[1,"extends layout\n\nblock content\n  form(action=\"/todoLists\", method=\"post\")\n    input(type='text', placeholder='name', name='name')\n    button.btn(type='submit') Submit\n  - each todoList in todoLists\n    p= todoList.name \n      a(href=\"/todoListItems/\"+todoListItem._id) Delete"]],"start1":0,"start2":0,"length1":0,"length2":274}]],"length":274,"saved":false}
+{"contributors":[],"silentsave":false,"ts":1363817982214,"patch":[[{"diffs":[[0,") Delete"],[1,"\n      \n"]],"start1":266,"start2":266,"length1":8,"length2":16}]],"length":282,"saved":false}
+{"contributors":[],"silentsave":false,"ts":1363818162890,"patch":[[{"diffs":[[0,"todoList"],[-1,"Item"],[1,"s"],[0,"._id) De"]],"start1":250,"start2":250,"length1":20,"length2":17}]],"length":279,"saved":false}
+{"ts":1363818176375,"patch":[[{"diffs":[[0,"todoList"],[-1,"s"],[0,"._id) De"]],"start1":250,"start2":250,"length1":17,"length2":16}]],"length":278,"saved":false}
+{"contributors":[],"silentsave":false,"ts":1364416583094,"patch":[[{"diffs":[[0,"me \n    "],[-1,"  "],[0,"a(href=\""]],"start1":215,"start2":215,"length1":18,"length2":16}]],"length":276,"saved":false}
+{"contributors":[],"silentsave":false,"ts":1365028642201,"patch":[[{"diffs":[[0,"List._id"],[1,", class=\"btn btn-danger\""],[0,") Delete"]],"start1":252,"start2":252,"length1":16,"length2":40}]],"length":300,"saved":false}

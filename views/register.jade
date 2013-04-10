@@ -1,0 +1,29 @@
+extends layout
+
+//block content
+//  h1= "All of the things"
+//  .row
+//    .span4.offset1
+//      form
+//        fieldset
+//          legend Legend
+//          label Label name
+//          input(type='text', placeholder='Username')
+//          input(type='password', placeholder='Password')
+//          input(type='text', placeholder='E-Mail Address')
+//          span.help-block Enter user info.
+//          label.checkbox
+//          button.btn(type='submit') Register
+    
+block content
+  form.form(action="/register",method="post")
+    fieldset
+      label Username
+      input(type='text',name='username')
+      label Password
+      input(type='password',name='password')
+      label Email
+      input(type='text',name='email')
+      input.btn.btn-primary(type='submit',value='Send to Server')
+  .span8 
+       img.img-circle(src='http://i258.photobucket.com/albums/hh269/DSewell692/149758_4114119056682_1671672681_n1_zpsec1357bb.jpg',width="100")

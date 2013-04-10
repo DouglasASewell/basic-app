@@ -1,0 +1,10 @@
+block content
+  form(action="/todoListItems", method="delete")
+    input(type='text', placeholder='name', name='name')
+    button.btn(type='delete') Submit
+  - each todoList in todoLists
+    p= todoList.name 
+      | 
+      a(href="/todoLists/"+todoList._id) View
+      | | 
+      a(href="/todoLists/"+todoList._id+"/delete") Delete

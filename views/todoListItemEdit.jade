@@ -1,0 +1,21 @@
+extends layout
+
+block content
+  form(method="post", action="/todoListItems/"+todoListItem._id)
+    input(type='text', placeholder='name', name='name',value=todoListItem.name)
+    label(for="complete") Complete
+    input(type='checkbox', placeholder='name', name='complete',checked=todoListItem.complete)
+    label(for="assignedUser") Assigned
+    select(name="assignedUserId")
+      - each user in users
+        - if (todoListItem.assignedUserId == user._id)
+          option(value=user._id,selected="selected")=user.email
+        else
+          option(value=user._id)=user.email
+
+    
+    
+    
+    br
+    button.btn(type='submit') Submit
+    

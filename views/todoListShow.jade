@@ -1,0 +1,38 @@
+extends layout
+
+block content
+  h1= todoList.name
+  form(action="/todoLists/"+todoList._id+"/items", method="post")
+    input(type='text', placeholder='name', name='name')
+    button.btn(type='submit') Submit
+    
+  div
+    table.table
+      thead
+        tr
+          th Description
+          th Assignee
+          th
+      tbody
+        - each todoListItem in todoListItems
+          tr
+            td 
+              - if (todoListItem.complete)
+                del=todoListItem.name
+              - else
+                =todoListItem.name
+            td
+              - each user in users
+                - if (user._id == todoListItem.assignedUserId) 
+                  = user.email
+            td
+              a(href="/todoListItems/"+todoListItem._id+"/complete", class="btn success") Complete
+              a(href="/todoListItems/"+todoListItem._id, class="btn btn-danger") Edit
+              a(href="/todoListItems/"+todoListItem._id+"/delete", class="btn btn-danger") Delete
+
+
+
+
+
+
+
