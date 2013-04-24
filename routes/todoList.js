@@ -4,7 +4,7 @@ var db = mongo.db('mongodb://Doug:Sewell@widmore.mongohq.com:10010/Queens')
 
 exports.list = function(request, result){
     if (request.session.user) {
-        db.collection('todoLists').find().toArray(function(err,res) {   
+        db.collection('todoLists').find({"participantIds":request.session.user._id.toString()}).toArray(function(err,res) {   
             result.render('todoLists', {todoLists:res});    
         });
     } else {
@@ -13,7 +13,7 @@ exports.list = function(request, result){
 };
 
 exports.create = function(request, result){
-    db.collection('todoLists').insert({name:request.body.name},function(err,res) {   
+    db.collection('todoLists').insert({name:request.body.name,participantIds:[request.session.user._id.toString()]},function(err,res) {   
             console.log(res);
             
             result.redirect('/todoLists');
@@ -47,5 +47,23 @@ exports.del = function(request, result){
 };
 
 exports.update = function(request, result){
-  result.send("respond with a resource");
+  db.collection('todoLists').findOne({_id:db.ObjectID.createFromHexString(request.params.id)},function(err,todoList) {   
+        todoList.name = request.body.name;
+        
+        todoList.participantIds = [];
+        
+        for (var key in request.body) {
+            if (request.body.hasOwnProperty(key)) {
+                if (key.substring(0,5) === "user-") {
+                    if (request.body[key] === "on") {
+                        todoList.participantIds.push(key.substring(5,key.length))   
+                    }
+                }
+            }
+        }
+        
+        db.collection('todoLists').save(todoList,function(err) {
+                 result.redirect('/todoLists/'+todoList._id);
+            });
+    });
 };

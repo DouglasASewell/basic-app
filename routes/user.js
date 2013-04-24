@@ -43,5 +43,5 @@ exports.registerPost = function(req, res){
 
     var newUser = { email : req.body.email, name: req.body.name, password: req.body.password }
     conn.collection('users').insert(newUser)
-    res.render('register', { title: 'Express' });
+    res.redirect('/');
 };

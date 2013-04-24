@@ -20,3 +20,6 @@
 {"ts":1362008223121,"patch":[[{"diffs":[[0,",name='e"],[1,"mail"],[0,"')\n     "]],"start1":710,"start2":710,"length1":16,"length2":20}]],"length":928,"saved":false}
 {"ts":1362008239845,"patch":[[{"diffs":[[0,"\n      input"],[1,".btn.btn-primary"],[0,"(type='submi"]],"start1":724,"start2":724,"length1":24,"length2":40}]],"length":944,"saved":false}
 {"ts":1362008251497,"patch":[[{"diffs":[[0,"ction=\"/"],[1,"register"],[0,"\",method"]],"start1":503,"start2":503,"length1":16,"length2":24}]],"length":952,"saved":false}
+{"contributors":[],"silentsave":false,"ts":1366238596918,"patch":[[{"diffs":[[0,"Server')"],[1," Register"],[0,"\n  .span"]],"start1":790,"start2":790,"length1":16,"length2":25}]],"length":961,"saved":false}
+{"ts":1366238610910,"patch":[[{"diffs":[[0,"Server')"],[-1," Register"],[0,"\n  .span"]],"start1":790,"start2":790,"length1":25,"length2":16}]],"length":952,"saved":false}
+{"ts":1366238671195,"patch":[[{"diffs":[[0,"ue='"],[-1,"Send to Serv"],[1,"Regist"],[0,"er')"]],"start1":778,"start2":778,"length1":20,"length2":14}]],"length":946,"saved":false}

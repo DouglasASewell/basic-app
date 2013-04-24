@@ -50,3 +50,4 @@
 {"ts":1365084239839,"patch":[[{"diffs":[[0,"d/comple"],[-1,"e"],[0,"t"],[1,"e"],[0,"\",todoLi"]],"start1":1497,"start2":1497,"length1":18,"length2":18}]],"length":1786,"saved":false}
 {"ts":1365084242394,"patch":[[{"diffs":[[0,"stItems."],[-1,"del"],[1,"complete"],[0,")\napp.ge"]],"start1":1515,"start2":1515,"length1":19,"length2":24}]],"length":1791,"saved":false}
 {"ts":1365084812669,"patch":[[{"diffs":[[0,"pdate)\n\n"],[1,"app.get(\"/todoListItems/:id/reopen\",todoListItems.reopen)\n"],[0,"app.get("]],"start1":1463,"start2":1463,"length1":16,"length2":74}]],"length":1849,"saved":false}
+{"contributors":[],"silentsave":false,"ts":1366234222444,"patch":[[{"diffs":[[0,"h');\n  \n"],[1,"  \n"],[0,"var app "]],"start1":285,"start2":285,"length1":16,"length2":19},{"diffs":[[0,"express();\n\n"],[1,"app.locals._ = require(\"underscore\");\n\n"],[0,"app.configur"]],"start1":306,"start2":306,"length1":24,"length2":63}]],"length":1891,"saved":false}

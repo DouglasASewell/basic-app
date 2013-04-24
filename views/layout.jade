@@ -4,13 +4,27 @@ html
     title Todo Stuff
     link(rel='stylesheet', href="/stylesheets/bootstrap.css")
     script(src='http://code.jquery.com/jquery-1.9.1.min.js')
- ul.breadcrumb
-    li
-        a(href='#') Home
-        span.divider /
-      li
-        a(href='#') Library
-        span.divider /
-      li.active Data
   body
-    block content
+    .navbar.navbar-inverse.navbar-fixed-top
+      .navbar-inner
+        .container
+          button.btn.btn-navbar(type='button', data-toggle='collapse', data-target='.nav-collapse')
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          .nav-collapse.collapse
+            ul.nav
+              li
+                a(href='/') Home
+              - if(locals.currentUser)
+                li
+                  a(href='/logout') Logout
+                li
+                  a(href='/todoLists') Todo Lists
+              - else 
+                li
+                  a(href='/register') Register
+                
+    
+    .container(style="margin-top:60px")
+      block content

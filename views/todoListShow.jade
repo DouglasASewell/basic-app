@@ -28,13 +28,27 @@ block content
                   = user.email
             td
               - if (todoListItem.complete)
-                a(href="/todoListItems/"+todoListItem._id+"/reopen", class="btn success") Reopen
+                a(href="/todoListItems/"+todoListItem._id+"/reopen", class="btn btn-success") Reopen
               - else
-                a(href="/todoListItems/"+todoListItem._id+"/complete", class="btn success") Complete
-              a(href="/todoListItems/"+todoListItem._id, class="btn btn-danger") Edit
+                a(href="/todoListItems/"+todoListItem._id+"/complete", class="btn btn-success") Complete
+              a(href="/todoListItems/"+todoListItem._id, class="btn") Edit
               a(href="/todoListItems/"+todoListItem._id+"/delete", class="btn btn-danger") Delete
 
+  form(action="/todoLists/"+todoList._id, method="post")
+    input(type="hidden", name="name", value=todoList.name)
+    h2 Participants
+    table
+      - each user in users
+        tr
+          td(width=300)= user.email
+          td
+            - if (_.contains(todoList.participantIds,user._id.toString()))
+              input(type="checkbox", name="user-"+user._id, checked="checked")
+            - else
+              input(type="checkbox", name="user-"+user._id)
 
+        
+    button.btn(type='submit') Submit
 
 
 

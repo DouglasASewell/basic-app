@@ -37,3 +37,6 @@
 {"ts":1364416484141,"patch":[[{"diffs":[[0,"essage:\""],[-1,"Unable to find user"],[1,"Incorrect password"],[0,"\",curren"]],"start1":727,"start2":727,"length1":35,"length2":34}]],"length":1312,"saved":false}
 {"contributors":[],"silentsave":false,"ts":1365027337934,"patch":[[{"diffs":[[0,"{\n  "],[-1,"result.send(\"respond with a resource\""],[1,"conn.collection('users').find({}, function(err,users) {\n     // now users is a list of all the users \n  }"],[0,");\n}"]],"start1":157,"start2":157,"length1":45,"length2":113}]],"length":1380,"saved":false}
 {"ts":1365027344082,"patch":[[{"diffs":[[0,".find({}"],[-1,", "],[1,").toArray("],[0,"function"]],"start1":185,"start2":185,"length1":18,"length2":26}]],"length":1388,"saved":false}
+{"contributors":[],"silentsave":false,"ts":1366641573701,"patch":[[{"diffs":[[0,"res.render('"],[-1,"register"],[1,"/"],[0,"', { title: "]],"start1":1339,"start2":1339,"length1":32,"length2":25}]],"length":1381,"saved":false}
+{"ts":1366641638473,"patch":[[{"diffs":[[0,"  res.re"],[-1,"nder"],[1,"direct"],[0,"('/', { "]],"start1":1337,"start2":1337,"length1":20,"length2":22}]],"length":1383,"saved":false}
+{"ts":1366641682547,"patch":[[{"diffs":[[0,"rect('/'"],[-1,", { title: 'Express' }"],[0,");\n};\n"]],"start1":1347,"start2":1347,"length1":36,"length2":14}]],"length":1361,"saved":false}

@@ -78,3 +78,6 @@
 {"contributors":[],"silentsave":false,"ts":1365028793442,"patch":[[{"diffs":[[0,"/logout\""],[1,", class=\"btn btn-danger\""],[0,") Logout"]],"start1":327,"start2":327,"length1":16,"length2":40}]],"length":817,"saved":false}
 {"ts":1365028807141,"patch":[[{"diffs":[[0,"doLists\""],[1,", class=\"btn\""],[0,") To do "]],"start1":285,"start2":285,"length1":16,"length2":29}]],"length":830,"saved":false}
 {"ts":1365028851122,"patch":[[{"diffs":[[0,"n\") To do lists\n"],[1,"            | | \n"],[0,"            a(hr"]],"start1":304,"start2":304,"length1":32,"length2":49}]],"length":847,"saved":false}
+{"contributors":[],"silentsave":false,"ts":1366235427685,"patch":[[{"diffs":[[0,"btn\") To"],[-1," "],[0,"do lists"]],"start1":302,"start2":302,"length1":17,"length2":16}]],"length":846,"saved":false}
+{"ts":1366235435796,"patch":[[{"diffs":[[0," your to"],[-1," "],[0,"do lists"]],"start1":244,"start2":244,"length1":17,"length2":16}]],"length":845,"saved":false}
+{"ts":1366235518096,"patch":[[{"diffs":[[0,"Welcome "],[-1,"b"],[1,"B"],[0,"ack\n    "]],"start1":213,"start2":213,"length1":17,"length2":17},{"diffs":[[0,"how "],[-1,"y"],[1,"Y"],[0,"our "],[-1,"t"],[1,"T"],[0,"odo "],[-1,"l"],[1,"L"],[0,"ists"]],"start1":241,"start2":241,"length1":19,"length2":19}]],"length":845,"saved":false}
